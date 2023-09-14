@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    background-color: #eaeaea;
+    /* width: 434px; */
+    font-family: 'Fira Sans', sans-serif;
+    height: 100vh;
+    transition: transform 0.3s ease-in;
+    position: absolute;
+}
+
+.sidebar nav {
+    padding: 40px;
+}
+
+.sidebar nav li {
+    list-style: none;
+    font-size: 20px;
+    padding: 20px 0;
+}
+
+.sidebar nav li a {
+    text-decoration: none;
+    color: black;
+}
+
+.main {
+    /* background-color: yellow; */
+    width: 90vw;
+}
+
+.container {
+    display: flex;
+}
+
+.InfoContainer {
+    /* background-color: purple; */
+    height: 58vh;
+    width: 80vw;
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.DevInfo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.hello {
+    font-size: 65px;
+}
+
+.name {
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.about {
+    font-size: 40px
+}
+
+.moreabout {
+    font-size: 22px;
+    margin-top: 20px;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.buttons {
+    margin-top: 32px;
+}
+
+.btn {
+    padding: 9px;
+    border-radius: 22px;
+    color: black;
+    background-color: #eaeaea;
+    font-weight: bold;
+    font-size: 21px;
+    margin: 0 3px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #a5a5a5;
+}
+
+.DevPic img {
+    height: 58vh;
+}
+
+/* Blogs */
+
+.BlogItem {
+    margin: 20px;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.BlogContainer h1 {
+    font-family: 'Fira Sans', sans-serif;
+    margin: 23px;
+}
+
+.BlogContainer {
+    margin: 40px 88px;
+}
+
+.BlogItem p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn-sm {
+    font-size: 10px;
+    padding: 7px 13px;
+    margin: 10px 0;
+}
+
+.sidebarGo {
+    transform: translate(-443px, 0px);
+    position: absolute;
+}
+
+.hamburger {
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+}
+
+.ham {
+    margin-top: 10px;
+}
+
+.cross {
+    margin-left: 110px;
+    margin-top: 10px;
+}
+
+/* Responsive */
+
+@media (max-width: 600px) {
+    * {
+        /* background-color: rgb(237, 122, 122); */
+    }
+
+    .DevPic {
+        display: none;
+    }
+
+
+    .Intro, .BlogContainer, .ContactForm {
+        margin: 50px 8px;
+    }
+}
